@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">PhoneticsKeyboard</string>
+    <string name="phonetics_keyboard">Phonetics Keyboard</string>
+    <string name="subtype_ph">Phonetics</string>
 </resources>
