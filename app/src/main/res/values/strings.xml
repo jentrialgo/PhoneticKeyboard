@@ -2,4 +2,21 @@
     <string name="app_name">PhoneticsKeyboard</string>
     <string name="phonetics_keyboard">Phonetics Keyboard</string>
     <string name="subtype_ph">Phonetics</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="presentation">
+        <![CDATA[
+        Hi there!
+        <br/><br/>
+        To use this keyboard you have to enable it in the settings of the device and, then, select
+        it from the list of enabled keyboards when you are entering text.
+        <br/><br/>
+        This is a test. Some people have shown interest in having a keyboard for phonetics and I have
+        tried to build one. I do not have any use for it, so I am very interested in hearing from
+        you, someone who is looking for this kind of keyboard. Please, e-mail me at
+        <a href="mailto:hoardingsinc@gmail.com?subject=Feedback%20about%Phonetic%20Keyboard">hoardingsinc@gmail.com</a>
+        with suggestions or problems you have. Any feedback will be welcomed!
+        ]]>
+    </string>
+    <string name="action_settings">Settings</string>
 </resources>
