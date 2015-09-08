@@ -10,10 +10,11 @@
         <Key android:codes="593" android:keyLabel="ɑ"/>
         <Key android:codes="604" android:keyLabel="ɜ"/>
         <Key android:codes="101" android:keyLabel="e"/>
+        <Key android:codes="949" android:keyLabel="ε"/>
         <Key android:codes="601" android:keyLabel="ə"/>
         <Key android:codes="105" android:keyLabel="i"/>
         <Key android:codes="618" android:keyLabel="ɪ"/>
-        <Key android:codes="-5" android:keyLabel="DEL" android:keyWidth="20%p" android:isRepeatable="true" android:keyEdgeFlags="right"/>
+        <Key android:codes="-5" android:keyLabel="DEL" android:isRepeatable="true" android:keyEdgeFlags="right"/>
     </Row>
     <Row>
         <Key android:codes="596" android:keyLabel="ɔ" android:keyEdgeFlags="left"/>
@@ -53,8 +54,9 @@
     </Row>
     <Row android:rowEdgeFlags="bottom">
         <Key android:codes="44" android:keyLabel="/" android:keyEdgeFlags="left"/>
+        <Key android:codes="39" android:keyLabel="'"/>
         <Key android:codes="63,33" android:keyLabel="\? !"/>
-        <Key android:codes="32" android:keyLabel="SPACE" android:keyWidth="80%p" android:isRepeatable="true"/>
+        <Key android:codes="32" android:keyLabel="SPACE" android:keyWidth="60%p" android:isRepeatable="true"/>
         <Key android:codes="-4" android:keyLabel="DONE" android:keyWidth="20%p" android:keyEdgeFlags="right"/>
     </Row>
 </Keyboard>
