@@ -1,11 +1,8 @@
 package com.hoardingsinc.phoneticskeyboard;
 
-import android.app.Service;
-import android.content.Intent;
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
-import android.os.IBinder;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.InputConnection;
@@ -24,6 +21,7 @@ public class PhoneticsKeyboard extends InputMethodService
         keyboard = new Keyboard(this, R.xml.phonetics);
         kv.setKeyboard(keyboard);
         kv.setOnKeyboardActionListener(this);
+
         return kv;
     }
 
