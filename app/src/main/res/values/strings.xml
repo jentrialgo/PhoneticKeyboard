@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PhoneticsKeyboard</string>
+    <string name="app_name">Phonetic Keyboard BETA</string>
     <string name="phonetics_keyboard">Phonetics Keyboard</string>
     <string name="subtype_ph">Phonetics</string>
     <string name="title_activity_main">Phonetic Keyboard</string>
