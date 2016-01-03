@@ -8,10 +8,41 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.hoardingsinc.phoneticskeyboard.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/presentation"
-        android:text="@string/presentation" />
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/presentation"
+            android:text="@string/presentation" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preferred layout:" />
+
+        <RadioGroup android:id="@+id/radio_group_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton android:id="@+id/radio_normal_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Normal"
+                android:onClick="onRadioButtonClicked" />
+
+            <RadioButton android:id="@+id/radio_extended_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Extended"
+                android:onClick="onRadioButtonClicked" />
+
+        </RadioGroup>
+
+    </LinearLayout>
 
 </ScrollView>

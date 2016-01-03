@@ -5,6 +5,7 @@ import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
 
 public class PhoneticsKeyboard extends InputMethodService
@@ -18,11 +19,23 @@ public class PhoneticsKeyboard extends InputMethodService
     @Override
     public View onCreateInputView() {
         kv = (KeyboardView)getLayoutInflater().inflate(R.layout.keyboard, null);
-        keyboard = new Keyboard(this, R.xml.phonetics);
+        keyboard = new Keyboard(this, keyboardLayoutVersion());
         kv.setKeyboard(keyboard);
         kv.setOnKeyboardActionListener(this);
 
         return kv;
+    }
+
+    private int keyboardLayoutVersion() {
+        KeyboardPreferences keyboardPreferences = new KeyboardPreferences(this);
+        switch (keyboardPreferences.getLayout()) {
+            case KeyboardPreferences.LAYOUT_NORMAL:
+                return R.xml.phonetics_normal;
+            case KeyboardPreferences.LAYOUT_EXTENDED:
+                return R.xml.phonetics_extended;
+            default:
+                return R.xml.phonetics_normal;
+        }
     }
 
     @Override
@@ -76,4 +89,12 @@ public class PhoneticsKeyboard extends InputMethodService
     @Override
     public void swipeUp() {
     }
+
+    @Override
+    public void onStartInputView(EditorInfo info, boolean restarting) {
+        super.onStartInputView(info, restarting);
+
+        setInputView(onCreateInputView());
+    }
+
 }
