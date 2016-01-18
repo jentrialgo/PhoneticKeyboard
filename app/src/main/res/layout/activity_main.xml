@@ -11,37 +11,57 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <TextView
+            android:id="@+id/presentation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/presentation"
             android:text="@string/presentation" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="12dp"
             android:text="Preferred layout:" />
 
-        <RadioGroup android:id="@+id/radio_group_layout"
+        <RadioGroup
+            android:id="@+id/radio_group_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <RadioButton android:id="@+id/radio_normal_layout"
+            <RadioButton
+                android:id="@+id/radio_normal_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Normal"
-                android:onClick="onRadioButtonClicked" />
+                android:onClick="onRadioButtonClicked"
+                android:text="Normal" />
 
-            <RadioButton android:id="@+id/radio_extended_layout"
+            <RadioButton
+                android:id="@+id/radio_extended_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Extended"
-                android:onClick="onRadioButtonClicked" />
+                android:onClick="onRadioButtonClicked"
+                android:text="Extended" />
 
         </RadioGroup>
+
+        <TextView
+            android:id="@+id/pronunroid_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:text="@string/pronunroid_ad" />
+
+        <Button
+            style="?borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@mipmap/ic_launcher"
+            android:drawablePadding="8dp"
+            android:text="@string/pronunroid_name" />
 
     </LinearLayout>
 

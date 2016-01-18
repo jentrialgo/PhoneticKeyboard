@@ -9,7 +9,8 @@
         Hi there!
         <br/><br/>
         To use this keyboard you have to enable it in the settings of the device and, then, select
-        it from the list of enabled keyboards when you are entering text.
+        it from the list of enabled keyboards when you are entering text. You can see a <a
+        href="">video here</a>.
         <br/><br/>
         This is a test. Some people have shown interest in having a keyboard for phonetics and I have
         tried to build one. I do not have any use for it, so I am very interested in hearing from
@@ -18,4 +19,7 @@
         with suggestions or problems you have. Any feedback will be welcomed!
         ]]>
     </string>
+    <string name="pronunroid_ad">Do you want to learn or test your knowledge on IPA for
+        transcribing American English? You can use another of my free apps:</string>
+    <string name="pronunroid_name">Pronunroid</string>
 </resources>
