@@ -31,4 +31,7 @@
     <string name="pronunroid_name">Pronunroid</string>
     <string name="open_settings">Open settings</string>
     <string name="open_keyboard_selection">Keyboard selection</string>
+    <string name="radio_compact">Compact</string>
+    <string name="radio_extended">Extended</string>
+    <string name="radio_normal">Normal</string>
 </resources>

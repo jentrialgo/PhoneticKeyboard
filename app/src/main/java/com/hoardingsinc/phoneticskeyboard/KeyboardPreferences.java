@@ -9,6 +9,7 @@ public class KeyboardPreferences {
 
     public static final int LAYOUT_NORMAL = 0;
     public static final int LAYOUT_EXTENDED = 1;
+    public static final int LAYOUT_COMPACT = 2;
 
     private Context mContext;
 

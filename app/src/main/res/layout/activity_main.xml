@@ -53,14 +53,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onRadioButtonClicked"
-                android:text="Normal" />
+                android:text="@string/radio_normal"
+                android:textColor="#555" />
 
             <RadioButton
                 android:id="@+id/radio_extended_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onRadioButtonClicked"
-                android:text="Extended" />
+                android:text="@string/radio_extended"
+                android:textColor="#555" />
+
+            <RadioButton
+                android:id="@+id/radio_compact_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/radio_compact"
+                android:textColor="#555" />
 
         </RadioGroup>
 

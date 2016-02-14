@@ -33,6 +33,8 @@ public class PhoneticsKeyboard extends InputMethodService
                 return R.xml.phonetics_normal;
             case KeyboardPreferences.LAYOUT_EXTENDED:
                 return R.xml.phonetics_extended;
+            case KeyboardPreferences.LAYOUT_COMPACT:
+                return R.xml.phonetics_compact;
             default:
                 return R.xml.phonetics_normal;
         }
