@@ -61,6 +61,6 @@
         <Key android:codes="58" android:keyLabel=":"/>
         <Key android:codes="32" android:keyLabel="SPACE" android:keyWidth="50%p" android:isRepeatable="true"/>
         <Key android:codes="63,33" android:keyLabel="\? !"/>
-        <Key android:codes="-4" android:keyLabel="DONE" android:keyWidth="20%p" android:keyEdgeFlags="right"/>
+        <Key android:codes="-4" android:keyLabel="DONE" android:keyWidth="30%p" android:keyEdgeFlags="right"/>
     </Row>
 </Keyboard>
