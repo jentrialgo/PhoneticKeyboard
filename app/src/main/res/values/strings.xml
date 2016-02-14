@@ -19,7 +19,14 @@
         with suggestions or problems you have. Any feedback will be welcomed!
         ]]>
     </string>
-    <string name="pronunroid_ad">Do you want to learn or test your knowledge on IPA for
-        transcribing American English? You can use another of my free apps:</string>
+    <string name="pronunroid_ad">
+        <![CDATA[
+        Do you want to learn or test your knowledge on IPA for
+        transcribing American English? You can use
+        <a href="https://play.google.com/store/apps/details?id=com.hoardingsinc.pronunroid">
+            Pronunroid</a>,
+        another of my free apps:
+        ]]>
+    </string>
     <string name="pronunroid_name">Pronunroid</string>
 </resources>

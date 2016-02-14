@@ -47,21 +47,24 @@
         </RadioGroup>
 
         <TextView
-            android:id="@+id/pronunroid_add"
+            android:id="@+id/pronunroid_ad"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="12dp"
             android:text="@string/pronunroid_ad" />
 
         <Button
+            android:id="@+id/button_pronunroid_ad"
             style="?borderlessButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@android:color/transparent"
-            android:drawableLeft="@mipmap/ic_launcher"
+            android:drawableLeft="@drawable/ic_pronunroid"
             android:drawablePadding="8dp"
-            android:text="@string/pronunroid_name" />
+            android:paddingTop="12dp"
+            android:text="@string/pronunroid_name"
+            android:textColor="#888" />
 
     </LinearLayout>
 
