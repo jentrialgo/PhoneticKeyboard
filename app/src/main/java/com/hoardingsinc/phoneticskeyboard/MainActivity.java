@@ -2,11 +2,13 @@ package com.hoardingsinc.phoneticskeyboard;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.provider.Settings;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -39,7 +41,11 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                 break;
         }
 
-        Button b = (Button) findViewById(R.id.button_pronunroid_ad);
+        Button b = (Button) findViewById(R.id.button_open_settings);
+        b.setOnClickListener(this);
+        b = (Button) findViewById(R.id.button_open_keyboard_selection);
+        b.setOnClickListener(this);
+        b = (Button) findViewById(R.id.button_pronunroid_ad);
         b.setOnClickListener(this);
     }
 
@@ -63,8 +69,19 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        // There's only one button: Pronunroid ad
-        startActivity(new Intent(Intent.ACTION_VIEW).setData(Uri.parse(
-                "https://play.google.com/store/apps/details?id=com.hoardingsinc.pronunroid")));
+        switch (v.getId()) {
+            case R.id.button_open_settings:
+                startActivity(new Intent(Settings.ACTION_INPUT_METHOD_SETTINGS));
+                break;
+            case R.id.button_open_keyboard_selection:
+                InputMethodManager inputManager = (InputMethodManager) getSystemService(
+                        INPUT_METHOD_SERVICE);
+                inputManager.showInputMethodPicker();
+                break;
+            case R.id.button_pronunroid_ad:
+                startActivity(new Intent(Intent.ACTION_VIEW).setData(Uri.parse(
+                        "https://play.google.com/store/apps/details?id=com.hoardingsinc.pronunroid")));
+                break;
+        }
     }
 }

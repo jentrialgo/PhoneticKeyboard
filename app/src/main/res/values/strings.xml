@@ -8,15 +8,15 @@
         <![CDATA[
         Hi there!
         <br/><br/>
-        To use this keyboard you have to enable it in the settings of the device and, then, select
-        it from the list of enabled keyboards when you are entering text. You can see a <a
-        href="">video here</a>.
-        <br/><br/>
         This is a test. Some people have shown interest in having a keyboard for phonetics and I have
         tried to build one. I do not have any use for it, so I am very interested in hearing from
-        you, someone who is looking for this kind of keyboard. Please, e-mail me at
-        <a href="mailto:hoardingsinc@gmail.com?subject=Feedback%20about%Phonetic%20Keyboard">hoardingsinc@gmail.com</a>
-        with suggestions or problems you have. Any feedback will be welcomed!
+        someone who is looking for this kind of keyboard. Please, e-mail me at
+        <a href="mailto:hoardingsinc@gmail.com?subject=Keyboard-Feedback">hoardingsinc@gmail.com</a>
+        with suggestions or problems you have.
+        <br/><br/>
+        To use this keyboard you have to 1) enable it in the settings of the device and 2) select
+        it from the list of enabled keyboards when you are entering text. These two buttons will
+        take you directly to the two required screens:
         ]]>
     </string>
     <string name="pronunroid_ad">
@@ -29,4 +29,6 @@
         ]]>
     </string>
     <string name="pronunroid_name">Pronunroid</string>
+    <string name="open_settings">Open settings</string>
+    <string name="open_keyboard_selection">Keyboard selection</string>
 </resources>
