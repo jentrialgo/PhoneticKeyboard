@@ -48,7 +48,7 @@
         <Key android:codes="110" android:keyLabel="n"/>
         <Key android:codes="331" android:keyLabel="ŋ"/>
         <Key android:codes="108" android:keyLabel="l"/>
-        <Key android:codes="114" android:keyLabel="r"/>
+        <Key android:codes="114,633" android:keyLabel="r ɹ"/>
         <Key android:codes="115" android:keyLabel="s"/>
         <Key android:codes="122" android:keyLabel="z"/>
         <Key android:codes="120" android:keyLabel="x"/>
@@ -57,8 +57,8 @@
     </Row>
     <Row android:rowEdgeFlags="bottom">
         <Key android:codes="47" android:keyLabel="/" android:keyEdgeFlags="left"/>
-        <Key android:codes="39" android:keyLabel="'"/>
-        <Key android:codes="58" android:keyLabel=":"/>
+        <Key android:codes="712,716,39" android:keyLabel="ˈ ˌ '"/>
+        <Key android:codes="720,58" android:keyLabel="ː :"/>
         <Key android:codes="32" android:keyLabel="SPACE" android:keyWidth="50%p" android:isRepeatable="true"/>
         <Key android:codes="63,33" android:keyLabel="\? !"/>
         <Key android:codes="-4" android:keyLabel="DONE" android:keyWidth="30%p" android:keyEdgeFlags="right"/>
