@@ -21,17 +21,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView presentation = (TextView) findViewById(R.id.presentation);
+        TextView presentation = findViewById(R.id.presentation);
         presentation.setText(Html.fromHtml(getString(R.string.presentation)));
         presentation.setMovementMethod(LinkMovementMethod.getInstance());
 
-        TextView pronunroidAdd = (TextView) findViewById(R.id.pronunroid_ad);
+        TextView pronunroidAdd = findViewById(R.id.pronunroid_ad);
         pronunroidAdd.setText(Html.fromHtml(getString(R.string.pronunroid_ad)));
         pronunroidAdd.setMovementMethod(LinkMovementMethod.getInstance());
 
         KeyboardPreferences keyboardPreferences = new KeyboardPreferences(this);
 
-        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radio_group_layout);
+        RadioGroup radioGroup = findViewById(R.id.radio_group_layout);
         switch (keyboardPreferences.getLayout()) {
             case KeyboardPreferences.LAYOUT_NORMAL:
                 radioGroup.check(R.id.radio_normal_layout);
@@ -44,11 +44,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
         }
 
-        Button b = (Button) findViewById(R.id.button_open_settings);
+        Button b = findViewById(R.id.button_open_settings);
         b.setOnClickListener(this);
-        b = (Button) findViewById(R.id.button_open_keyboard_selection);
+        b = findViewById(R.id.button_open_keyboard_selection);
         b.setOnClickListener(this);
-        b = (Button) findViewById(R.id.button_pronunroid_ad);
+        b = findViewById(R.id.button_pronunroid_ad);
         b.setOnClickListener(this);
     }
 
