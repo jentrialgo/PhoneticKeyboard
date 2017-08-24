@@ -15,8 +15,10 @@
         with suggestions or problems you have.
         <br/><br/>
         To use this keyboard you have to 1) enable it in the settings of the device and 2) select
-        it from the list of enabled keyboards when you are entering text. These two buttons will
-        take you directly to the two required screens:
+        it from the list of enabled keyboards when you are entering text. The two buttons below will
+        take you directly to the two required screens. Once you are in the keyboard, many Android
+        devices provide a button in the bottom of the screen to change between keyboards. If not,
+        you can use the button in the bottom left of the phonetic keyboard itself.
         ]]>
     </string>
     <string name="pronunroid_ad">

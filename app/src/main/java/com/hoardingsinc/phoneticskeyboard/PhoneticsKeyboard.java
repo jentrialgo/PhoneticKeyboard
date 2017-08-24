@@ -7,6 +7,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
+import android.view.inputmethod.InputMethodManager;
 
 public class PhoneticsKeyboard extends InputMethodService
         implements KeyboardView.OnKeyboardActionListener {
@@ -44,6 +45,11 @@ public class PhoneticsKeyboard extends InputMethodService
     public void onKey(int primaryCode, int[] keyCodes) {
         InputConnection ic = getCurrentInputConnection();
         switch(primaryCode){
+            case Keyboard.KEYCODE_MODE_CHANGE:
+                InputMethodManager inputManager = (InputMethodManager) getSystemService(
+                        INPUT_METHOD_SERVICE);
+                inputManager.showInputMethodPicker();
+                break;
             case Keyboard.KEYCODE_DELETE :
                 ic.deleteSurroundingText(1, 0);
                 break;
