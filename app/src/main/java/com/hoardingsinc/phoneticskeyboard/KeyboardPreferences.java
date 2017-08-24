@@ -28,7 +28,7 @@ public class KeyboardPreferences {
     public void saveLayout(int layout) {
         SharedPreferences.Editor editor = getSharedPreferences().edit();
         editor.putInt(PREFIX_LAYOUT, layout);
-        editor.commit();
+        editor.apply();
     }
 
 }

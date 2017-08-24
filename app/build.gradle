@@ -1,15 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "23.0.3"
+    compileSdkVersion 26
+    buildToolsVersion '26.0.1'
 
     defaultConfig {
         applicationId "com.hoardingsinc.phoneticskeyboard"
         minSdkVersion 15
-        targetSdkVersion 24
-        versionCode 3
-        versionName "0.7"
+        targetSdkVersion 26
+        versionCode 2
+        versionName "0.6"
     }
     buildTypes {
         release {
@@ -20,6 +20,5 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.android.support:appcompat-v7:26.0.1'
 }
