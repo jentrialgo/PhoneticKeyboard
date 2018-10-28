@@ -39,6 +39,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case KeyboardPreferences.LAYOUT_EXTENDED:
                 radioGroup.check(R.id.radio_extended_layout);
                 break;
+            case KeyboardPreferences.LAYOUT_EXTENDED_2:
+                radioGroup.check(R.id.radio_extended2_layout);
+                break;
             case KeyboardPreferences.LAYOUT_COMPACT:
                 radioGroup.check(R.id.radio_compact_layout);
                 break;
@@ -66,6 +69,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.radio_extended_layout:
                 keyboardPreferences.saveLayout(KeyboardPreferences.LAYOUT_EXTENDED);
+                break;
+            case R.id.radio_extended2_layout:
+                keyboardPreferences.saveLayout(KeyboardPreferences.LAYOUT_EXTENDED_2);
                 break;
             case R.id.radio_compact_layout:
                 keyboardPreferences.saveLayout(KeyboardPreferences.LAYOUT_COMPACT);

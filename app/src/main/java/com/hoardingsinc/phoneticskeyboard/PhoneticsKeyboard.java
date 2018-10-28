@@ -34,6 +34,8 @@ public class PhoneticsKeyboard extends InputMethodService
                 return R.xml.phonetics_normal;
             case KeyboardPreferences.LAYOUT_EXTENDED:
                 return R.xml.phonetics_extended;
+            case KeyboardPreferences.LAYOUT_EXTENDED_2:
+                return R.xml.phonetics_extended_2;
             case KeyboardPreferences.LAYOUT_COMPACT:
                 return R.xml.phonetics_compact;
             default:
@@ -80,6 +82,7 @@ public class PhoneticsKeyboard extends InputMethodService
 
     @Override
     public void onText(CharSequence text) {
+        getCurrentInputConnection().commitText(text, 1);
     }
 
     @Override

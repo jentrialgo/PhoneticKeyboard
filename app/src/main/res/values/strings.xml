@@ -37,4 +37,5 @@
     <string name="radio_extended">Extended</string>
     <string name="radio_normal">Normal</string>
     <string name="preferred_layout">Preferred layout:</string>
+    <string name="extended_2">Extended 2</string>
 </resources>

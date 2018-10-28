@@ -65,6 +65,14 @@
                 android:textColor="#555" />
 
             <RadioButton
+                android:id="@+id/radio_extended2_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/extended_2"
+                android:textColor="#555" />
+
+            <RadioButton
                 android:id="@+id/radio_compact_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
