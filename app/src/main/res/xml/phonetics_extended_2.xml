@@ -82,6 +82,7 @@
         <Key android:codes="720" android:keyLabel="ː" android:keyEdgeFlags="left"/>
         <Key android:codes="712" android:keyLabel="ˈ"/>
         <Key android:codes="716" android:keyLabel="ˌ"/>
+        <Key android:codes="47" android:keyLabel="/" />
         <Key android:codes="32" android:keyLabel="SPACE" android:keyWidth="80%p" android:isRepeatable="true"/>
         <Key android:codes="-2" android:keyIcon="@drawable/ic_keyboard_black_24dp"/>
         <Key android:codes="-4" android:keyLabel="DONE" android:keyWidth="20%p" android:keyEdgeFlags="right"/>
