@@ -2,7 +2,7 @@
     android:keyWidth="15%p"
     android:horizontalGap="0px"
     android:verticalGap="0px"
-    android:keyHeight="60dp"
+    android:keyHeight="50dp"
     >
     <Row>
         <Key android:keyOutputText="iː" android:keyLabel="iː" android:keyEdgeFlags="left"/>
