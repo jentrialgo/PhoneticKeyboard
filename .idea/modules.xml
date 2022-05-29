@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/PhoneticKeyboard.iml" filepath="$PROJECT_DIR$/.idea/modules/PhoneticKeyboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PhoneticKeyboard.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PhoneticKeyboard.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PhoneticKeyboard.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PhoneticKeyboard.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PhoneticKeyboard.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PhoneticKeyboard.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PhoneticKeyboard.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PhoneticKeyboard.app.unitTest.iml" />
     </modules>
   </component>
 </project>

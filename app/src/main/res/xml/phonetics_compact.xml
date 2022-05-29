@@ -33,7 +33,7 @@
     </Row>
     <Row>
         <Key android:codes="107" android:keyLabel="k" android:keyEdgeFlags="right"/>
-        <Key android:codes="104" android:keyLabel="h"/>
+        <Key android:codes="104,688" android:keyLabel="h ʰ"/>
         <Key android:codes="658" android:keyLabel="ʒ"/>
         <Key android:codes="643" android:keyLabel="ʃ"/>
         <Key android:codes="102" android:keyLabel="f"/>
@@ -45,9 +45,9 @@
     </Row>
     <Row>
         <Key android:codes="109" android:keyLabel="m" android:keyEdgeFlags="right"/>
-        <Key android:codes="110" android:keyLabel="n"/>
+        <Key android:codes="110,8319" android:keyLabel="n ⁿ"/>
         <Key android:codes="331" android:keyLabel="ŋ"/>
-        <Key android:codes="108" android:keyLabel="l"/>
+        <Key android:codes="108,58772" android:keyLabel="l l̥"/>
         <Key android:codes="114,633" android:keyLabel="r ɹ"/>
         <Key android:codes="115" android:keyLabel="s"/>
         <Key android:codes="122" android:keyLabel="z"/>
