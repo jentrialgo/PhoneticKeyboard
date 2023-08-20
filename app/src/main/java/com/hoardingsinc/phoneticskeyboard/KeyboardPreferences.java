@@ -12,7 +12,7 @@ public class KeyboardPreferences {
     public static final int LAYOUT_COMPACT = 2;
     public static final int LAYOUT_EXTENDED_2 = 3;
 
-    private Context mContext;
+    private final Context mContext;
 
     public KeyboardPreferences(Context context) {
         mContext = context;

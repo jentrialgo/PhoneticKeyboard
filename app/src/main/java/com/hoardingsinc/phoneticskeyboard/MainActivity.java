@@ -63,37 +63,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         KeyboardPreferences keyboardPreferences = new KeyboardPreferences(this);
 
-        switch (view.getId()) {
-            case R.id.radio_normal_layout:
-                keyboardPreferences.saveLayout(KeyboardPreferences.LAYOUT_NORMAL);
-                break;
-            case R.id.radio_extended_layout:
-                keyboardPreferences.saveLayout(KeyboardPreferences.LAYOUT_EXTENDED);
-                break;
-            case R.id.radio_extended2_layout:
-                keyboardPreferences.saveLayout(KeyboardPreferences.LAYOUT_EXTENDED_2);
-                break;
-            case R.id.radio_compact_layout:
-                keyboardPreferences.saveLayout(KeyboardPreferences.LAYOUT_COMPACT);
-                break;
+        int viewId = view.getId();
+        if (viewId == R.id.radio_normal_layout) {
+            keyboardPreferences.saveLayout(KeyboardPreferences.LAYOUT_NORMAL);
+        } else if (viewId == R.id.radio_extended_layout) {
+            keyboardPreferences.saveLayout(KeyboardPreferences.LAYOUT_EXTENDED);
+        } else if (viewId == R.id.radio_extended2_layout) {
+            keyboardPreferences.saveLayout(KeyboardPreferences.LAYOUT_EXTENDED_2);
+        } else if (viewId == R.id.radio_compact_layout) {
+            keyboardPreferences.saveLayout(KeyboardPreferences.LAYOUT_COMPACT);
         }
     }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.button_open_settings:
-                startActivity(new Intent(Settings.ACTION_INPUT_METHOD_SETTINGS));
-                break;
-            case R.id.button_open_keyboard_selection:
-                InputMethodManager inputManager = (InputMethodManager) getSystemService(
-                        INPUT_METHOD_SERVICE);
-                inputManager.showInputMethodPicker();
-                break;
-            case R.id.button_pronunroid_ad:
-                startActivity(new Intent(Intent.ACTION_VIEW).setData(Uri.parse(
-                        "https://play.google.com/store/apps/details?id=com.hoardingsinc.pronunroid")));
-                break;
+        int viewId = v.getId();
+        if (viewId == R.id.button_open_settings) {
+            startActivity(new Intent(Settings.ACTION_INPUT_METHOD_SETTINGS));
+        } else if (viewId == R.id.button_open_keyboard_selection) {
+            InputMethodManager inputManager = (InputMethodManager) getSystemService(
+                    INPUT_METHOD_SERVICE);
+            inputManager.showInputMethodPicker();
+        } else if (viewId == R.id.button_pronunroid_ad) {
+            startActivity(new Intent(Intent.ACTION_VIEW).setData(Uri.parse(
+                    "https://play.google.com/store/apps/details?id=com.hoardingsinc.pronunroid")));
         }
     }
 }
